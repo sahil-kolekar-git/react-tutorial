@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*^ lec 4 css 
+.container {
+  width: 100%;
+}
+.container > article {
+  width: 80%;
+  margin: 70px auto;
+}
+
+table {
+  width: 100%;
+}
+
+table,
+td,
+tr,
+th {
+  padding: 10px 20px;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+th {
+  background: purple;
+  color: #ffff;
+}
+
+img {
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+}
+*/
+
+/*^ lec 5 :event handling in react 
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+}
+ 
+*/
+
+/* ^ lec8 : Conditional Rendering
+
+.container {
+  height: 5em;
+  width: 100vw;
+  border: 1px solid black;
+  display: flex;
+  background: black;
+  justify-content: start;
+  color: white;
+  padding-left: 3em;
+  align-items: center;
+  gap: 5em;
+}
+.container > li {
+  list-style: none;
+  cursor: pointer;
+  font-size: large;
+  font-weight: bold;
+}
+
+.login > li {
+  list-style: none;
+  cursor: pointer;
+  font-size: large;
+  font-weight: bold;
+}
+
+.container > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5em;
+}
+
+.logout > li {
+  list-style: none;
+  cursor: pointer;
+  font-size: large;
+  font-weight: bold;
+}
+
+.main {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+lec 11 :
+*/
+
+.main {
+  height: 100vh;
+  width: 100vw;
+}
+
+.main article {
+  width: 80%;
+
+  margin: 70px auto;
+}
+
+table {
+  width: 100%;
+}
+
+table,
+tr,
+th,
+td {
+  padding: 10px 10px;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th {
+  background: purple;
+  color: #fff;
+}
+img {
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+}

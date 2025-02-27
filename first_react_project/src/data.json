@@ -1,0 +1,229 @@
+[
+  {
+    "id": 198,
+    "title": "chair",
+    "price": 900,
+    "description": "this is the description of the chair",
+    "images": ["[\"http://cmcmcmm.com\"]"],
+    "creationAt": "2025-02-11T10:24:51.000Z",
+    "updatedAt": "2025-02-11T10:24:51.000Z",
+    "category": {
+      "id": 2,
+      "name": "Celana Merah",
+      "image": "https://iili.io/dAyUpkJ.jpg",
+      "creationAt": "2025-02-10T16:50:00.000Z",
+      "updatedAt": "2025-02-11T03:13:12.000Z"
+    }
+  },
+  {
+    "id": 200,
+    "title": "bed prod",
+    "price": 60,
+    "description": "Privet iz Pitera",
+    "images": ["[\"https://placeimg.com/6test0/\"]"],
+    "creationAt": "2025-02-11T10:28:03.000Z",
+    "updatedAt": "2025-02-11T10:28:03.000Z",
+    "category": {
+      "id": 2,
+      "name": "Celana Merah",
+      "image": "https://iili.io/dAyUpkJ.jpg",
+      "creationAt": "2025-02-10T16:50:00.000Z",
+      "updatedAt": "2025-02-11T03:13:12.000Z"
+    }
+  },
+  {
+    "id": 201,
+    "title": "napkins",
+    "price": 60,
+    "description": "Privet iz Pitera",
+    "images": ["[\"https://placeimg.com/6test0/\"]"],
+    "creationAt": "2025-02-11T10:28:09.000Z",
+    "updatedAt": "2025-02-11T10:28:09.000Z",
+    "category": {
+      "id": 2,
+      "name": "Celana Merah",
+      "image": "https://iili.io/dAyUpkJ.jpg",
+      "creationAt": "2025-02-10T16:50:00.000Z",
+      "updatedAt": "2025-02-11T03:13:12.000Z"
+    }
+  },
+  {
+    "id": 204,
+    "title": "XCNM",
+    "price": 10,
+    "description": "dddd",
+    "images": ["[\"https://placeimg.com/640/480/any\"]"],
+    "creationAt": "2025-02-11T10:35:59.000Z",
+    "updatedAt": "2025-02-11T10:35:59.000Z",
+    "category": {
+      "id": 1,
+      "name": "Clothes",
+      "image": "https://i.imgur.com/QkIa5tT.jpeg",
+      "creationAt": "2025-02-10T16:50:00.000Z",
+      "updatedAt": "2025-02-10T16:50:00.000Z"
+    }
+  },
+  {
+    "id": 208,
+    "title": "Shapka vadima",
+    "price": 60,
+    "description": "Privet iz Pitera",
+    "images": ["[\"https://placeimg.com/6test0/\"]"],
+    "creationAt": "2025-02-11T10:42:39.000Z",
+    "updatedAt": "2025-02-11T10:42:39.000Z",
+    "category": {
+      "id": 2,
+      "name": "Celana Merah",
+      "image": "https://iili.io/dAyUpkJ.jpg",
+      "creationAt": "2025-02-10T16:50:00.000Z",
+      "updatedAt": "2025-02-11T03:13:12.000Z"
+    }
+  },
+  {
+    "id": 210,
+    "title": "XCNMO",
+    "price": 10,
+    "description": "Dana",
+    "images": ["[\"https://placeimg.com/640/480/any\"]"],
+    "creationAt": "2025-02-11T10:46:19.000Z",
+    "updatedAt": "2025-02-11T10:46:19.000Z",
+    "category": {
+      "id": 1,
+      "name": "Clothes",
+      "image": "https://i.imgur.com/QkIa5tT.jpeg",
+      "creationAt": "2025-02-10T16:50:00.000Z",
+      "updatedAt": "2025-02-10T16:50:00.000Z"
+    }
+  },
+  {
+    "id": 212,
+    "title": "kepka 45",
+    "price": 60,
+    "description": "Privet iz Pitera",
+    "images": ["[\"https://placeimg.com/6test0/\"]"],
+    "creationAt": "2025-02-11T10:49:56.000Z",
+    "updatedAt": "2025-02-11T10:49:56.000Z",
+    "category": {
+      "id": 2,
+      "name": "Celana Merah",
+      "image": "https://iili.io/dAyUpkJ.jpg",
+      "creationAt": "2025-02-10T16:50:00.000Z",
+      "updatedAt": "2025-02-11T03:13:12.000Z"
+    }
+  },
+  {
+    "id": 213,
+    "title": "zapara",
+    "price": 60,
+    "description": "Privet iz Pitera",
+    "images": ["[\"https://placeimg.com/6test0/\"]"],
+    "creationAt": "2025-02-11T10:50:32.000Z",
+    "updatedAt": "2025-02-11T10:50:32.000Z",
+    "category": {
+      "id": 2,
+      "name": "Celana Merah",
+      "image": "https://iili.io/dAyUpkJ.jpg",
+      "creationAt": "2025-02-10T16:50:00.000Z",
+      "updatedAt": "2025-02-11T03:13:12.000Z"
+    }
+  },
+  {
+    "id": 214,
+    "title": "Hello it is me",
+    "price": 10,
+    "description": "Step onto the field and stand out from the crowd with these eye-catching holographic soccer cleats. Designed for the modern player, these cleats feature a sleek silhouette, lightweight construction for maximum agility, and durable studs for optimal traction. The shimmering holographic finish reflects a rainbow of colors as you move, ensuring that you'll be noticed for both your skills and style. Perfect for the fashion-forward athlete who wants to make a statement.+10000e9rr8",
+    "images": ["[\"https://placeimg.com/640/480/any\"]"],
+    "creationAt": "2025-02-11T10:54:57.000Z",
+    "updatedAt": "2025-02-11T10:54:57.000Z",
+    "category": {
+      "id": 1,
+      "name": "Clothes",
+      "image": "https://i.imgur.com/QkIa5tT.jpeg",
+      "creationAt": "2025-02-10T16:50:00.000Z",
+      "updatedAt": "2025-02-10T16:50:00.000Z"
+    }
+  },
+  {
+    "id": 215,
+    "title": "Hello it is me",
+    "price": 10,
+    "description": "Step onto the field and stand out from the crowd with these eye-catching holographic soccer cleats. Designed for the modern player, these cleats feature a sleek silhouette, lightweight construction for maximum agility, and durable studs for optimal traction. The shimmering holographic finish reflects a rainbow of colors as you move, ensuring that you'll be noticed for both your skills and style. Perfect for the fashion-forward athlete who wants to make a statement.+10000e9rr8",
+    "images": ["[\"https://placeimg.com/640/480/any\"]"],
+    "creationAt": "2025-02-11T10:55:39.000Z",
+    "updatedAt": "2025-02-11T10:55:39.000Z",
+    "category": {
+      "id": 1,
+      "name": "Clothes",
+      "image": "https://i.imgur.com/QkIa5tT.jpeg",
+      "creationAt": "2025-02-10T16:50:00.000Z",
+      "updatedAt": "2025-02-10T16:50:00.000Z"
+    }
+  },
+  {
+    "id": 216,
+    "title": "saffae",
+    "price": 10,
+    "description": "Step onto the field and stand out from the crowd with these eye-catching holographic soccer cleats. Designed for the modern player, these cleats feature a sleek silhouette, lightweight construction for maximum agility, and durable studs for optimal traction. The shimmering holographic finish reflects a rainbow of colors as you move, ensuring that you'll be noticed for both your skills and style. Perfect for the fashion-forward athlete who wants to make a statement.+10000e9rr8",
+    "images": ["[\"https://placeimg.com/640/480/any\"]"],
+    "creationAt": "2025-02-11T10:56:26.000Z",
+    "updatedAt": "2025-02-11T10:56:26.000Z",
+    "category": {
+      "id": 1,
+      "name": "Clothes",
+      "image": "https://i.imgur.com/QkIa5tT.jpeg",
+      "creationAt": "2025-02-10T16:50:00.000Z",
+      "updatedAt": "2025-02-10T16:50:00.000Z"
+    }
+  },
+  {
+    "id": 218,
+    "title": "New Cotton Shirt",
+    "price": 1100,
+    "description": "Very nice and attractive",
+    "images": ["[\"https://placeimg.com/640/480/cotton\"]"],
+    "creationAt": "2025-02-11T11:02:58.000Z",
+    "updatedAt": "2025-02-11T11:02:58.000Z",
+    "category": {
+      "id": 1,
+      "name": "Clothes",
+      "image": "https://i.imgur.com/QkIa5tT.jpeg",
+      "creationAt": "2025-02-10T16:50:00.000Z",
+      "updatedAt": "2025-02-10T16:50:00.000Z"
+    }
+  },
+  {
+    "id": 219,
+    "title": "Mobile Phones",
+    "price": 10,
+    "description": "A description",
+    "images": ["[\"https://placeimg.com/640/480/any\"]"],
+    "creationAt": "2025-02-11T11:02:59.000Z",
+    "updatedAt": "2025-02-11T11:02:59.000Z",
+    "category": {
+      "id": 1,
+      "name": "Clothes",
+      "image": "https://i.imgur.com/QkIa5tT.jpeg",
+      "creationAt": "2025-02-10T16:50:00.000Z",
+      "updatedAt": "2025-02-10T16:50:00.000Z"
+    }
+  },
+  {
+    "id": 220,
+    "title": "Book",
+    "price": 20,
+    "description": "A description",
+    "images": [
+      "[\"https://m.media-amazon.com/images/I/71outQby9BL._AC_UF1000",
+      "1000_QL80_.jpg\"]"
+    ],
+    "creationAt": "2025-02-11T11:12:55.000Z",
+    "updatedAt": "2025-02-11T11:12:55.000Z",
+    "category": {
+      "id": 23,
+      "name": "Carnes",
+      "image": "https://i.imgur.com/QkIa5tT.jpeg",
+      "creationAt": "2025-02-10T23:18:31.000Z",
+      "updatedAt": "2025-02-10T23:18:31.000Z"
+    }
+  }
+]

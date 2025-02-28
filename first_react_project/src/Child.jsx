@@ -179,3 +179,38 @@ Child.PropTypes = {
 };
 export default Child;
 */
+
+//^ component lifecycle in class component
+
+import React, { Component } from "react";
+
+class Child extends Component {
+  constructor() {
+    super();
+    console.log("child constructor");
+    this.state = {
+      count: 0,
+    };
+  }
+  render() {
+    console.log("child rendered");
+
+    return (
+      <>
+        <h2>Count:{this.state.count}</h2>
+      </>
+    );
+  }
+  static getDerivedStateFromProps(prop, state) {
+    console.log(prop);
+    console.log(state);
+    console.log("static getDerivedStateFromProps");
+
+    return prop;
+  }
+  componentDidMount() {
+    console.log("child componentDidMount method");
+  }
+}
+
+export default Child;

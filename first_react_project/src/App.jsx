@@ -1451,3 +1451,108 @@ class App extends React.Component {
 
 export default App;
 */
+
+//~ rendering  phase
+/*
+import { tr } from "@faker-js/faker";
+import axios from "axios";
+import React from "react";
+import { Component } from "react";
+class App extends Component {
+  constructor() {
+    super();
+    console.log("constructor method");
+    this.state = { data: [] };
+  }
+  static getDerivedStateFromProps() {
+    console.log("static getDerivedStateFromProps method");
+    return null;
+  }
+  render() {
+    console.log("render method");
+    console.log(this.state.data);
+
+    return (
+      <>
+        <div className="main">
+          <table>
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Image</th>
+                <th>Description</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              {this.state.data.map((val, i) => {
+                let { id, price, title, images, description } = val;
+                return (
+                  <tr key={i}>
+                    <td>{id}</td>
+                    <td>{title}</td>
+                    <td>
+                      <img src={images[0]} alt="" />
+                    </td>
+                    <td>{description}</td>
+                    <td>{price}.0$</td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+      </>
+    );
+  }
+  componentDidMount() {
+    console.log("Component did mount method");
+    axios
+      .get("https://api.escuelajs.co/api/v1/products")
+      .then((value) => this.setState({ data: value.data }));
+  }
+}
+
+export default App;
+*/
+
+//~ updating phase
+import React from "react";
+import Child from "./Child";
+
+class App extends React.Component {
+  constructor() {
+    super();
+    console.log("constructor method");
+    this.state = {
+      count: 0,
+    };
+  }
+  handleClick = () => {
+    this.setState({
+      count: this.state.count + 1,
+    });
+  };
+  render() {
+    console.log("render method");
+
+    return (
+      <>
+        <Child count={this.state.count} />
+        <button onClick={this.handleClick}>update count</button>
+      </>
+    );
+  }
+  static getDerivedStateFromProps(prop, state) {
+    console.log(prop);
+    console.log(state);
+
+    console.log("static method getDerivedStateFromProps");
+    return null;
+  }
+  componentDidMount() {
+    console.log("componentDidMount method");
+  }
+}
+export default App;

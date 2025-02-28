@@ -3,3 +3,82 @@
   padding: 0;
   box-sizing: border-box;
 }
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+}
+.nav {
+  height: 100%;
+}
+.nav > ul {
+  display: flex;
+  background: black;
+  align-items: center;
+  justify-content: start;
+  height: 4rem;
+  list-style: none;
+  gap: 5em;
+  padding: 0px 4em;
+}
+.nav > ul > li {
+  font-size: large;
+}
+.nav > ul > li > a {
+  text-decoration: none;
+  color: white;
+}
+
+.products {
+  width: 100%;
+}
+.products > ul {
+  list-style: none;
+  display: flex;
+  height: 2rem;
+  align-items: center;
+  margin: 0.5em 1em;
+  gap: 2em;
+  padding: 1em 2em;
+}
+
+.products > ul > li > a {
+  font-size: large;
+  text-decoration: none;
+  color: black;
+}
+.active {
+  color: red !important;
+}
+
+.new {
+  width: 100%;
+}
+.new > article {
+  width: 100%;
+}
+.new > article > table {
+  width: 80%;
+  margin: 0px 10%;
+}
+.new > article > table th {
+  background-color: purple;
+  color: #fff;
+}
+
+table,
+th,
+tr,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 1em 1.5em;
+}
+
+img {
+  height: 10em;
+  width: 10em;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}

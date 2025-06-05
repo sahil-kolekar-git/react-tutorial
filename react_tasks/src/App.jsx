@@ -170,3 +170,124 @@ const App = () => {
 
 export default App;
 */
+
+//^ task 6:
+//^ based on custom hook :
+
+import React, { createRef, useRef, useState } from "react";
+import countryData from "./country.json";
+
+const App = () => {
+  let [data, setData] = useState({
+    username: "",
+    email: "",
+    password: "",
+    gender: "",
+    country: "",
+    skills: [],
+  });
+
+  let handleSkills = (e) => {
+    console.log(e.target.value);
+    let value = e.target.value;
+    if (!skills.includes(value)) {
+      skills.push(value);
+    } else {
+      skills.splice(skills.indexOf(value), 1);
+    }
+  };
+  let handleClick = (e) => {
+    e.preventDefault();
+    console.log(data);
+  };
+
+  let handleChange = (e) => {
+    let { name, value } = e.target;
+    setData({ ...data, [name]: value });
+  };
+  let { username, email, password, gender, country, skills } = data;
+  return (
+    <div className="container">
+      <form>
+        <label htmlFor="username">Enter Username</label>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="enter username"
+          required={true}
+          value={username}
+          onChange={handleChange}
+        />
+        <br />
+        <label htmlFor="email">Enter email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="example@gmai.com"
+          value={email}
+          onChange={handleChange}
+        />
+        <br />
+        <label htmlFor="password">Enter password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="********"
+          value={password}
+          onChange={handleChange}
+        />
+        <br />
+        <label htmlFor="gender">Select your gender : </label>
+        <div id="gender" onChange={handleChange} value={gender}>
+          <input type="radio" name="gender" value={"male"} /> <span>Male</span>
+          <br />
+          <input type="radio" name="gender" value={"female"} />
+          <span>Female</span> <br />
+          <input type="radio" name="gender" value={"other"} />
+          <span>other</span> <br />
+        </div>
+        <label htmlFor="skills">Select skills : </label>
+        <div id="skills" value={skills} onChange={handleSkills}>
+          <input type="checkbox" name="skills" value={"Java"} />
+          Java <br />
+          <input type="checkbox" name="skills" value={"Sql"} />
+          Sql <br />
+          <input type="checkbox" name="skills" value={"Python"} />
+          Python <br />
+          <input type="checkbox" name="skills" value={"HTML"} />
+          HTML <br />
+          <input type="checkbox" name="skills" value={"JS"} />
+          JS <br />
+          <input type="checkbox" name="skills" value={"React"} />
+          React <br />
+          <input type="checkbox" name="skills" value={"ML"} />
+          ML <br />
+          <input type="checkbox" name="skills" value={"SpringBoot"} />
+          SpringBoot <br />
+          <input type="checkbox" name="skills" value={"Bootstrap"} />
+          Bootstrap <br />
+        </div>
+        <label htmlFor="country">Select your country : </label>
+        <div id="country" value={country}>
+          <select name="country" id="country">
+            {countryData.map((e, i) => {
+              return (
+                <option key={i} value={e.name}>
+                  {e.name}
+                </option>
+              );
+            })}
+          </select>
+        </div>
+        <button type="submit" onClick={handleClick}>
+          submit data
+        </button>
+      </form>
+    </div>
+  );
+};
+
+export default App;

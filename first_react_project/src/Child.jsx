@@ -156,7 +156,17 @@ export default Child;
 */
 
 //! how to accept childeren from parent component
+/*
+import React from "react";
 
+const Child = (props) => {
+  console.log(props);
+
+  return <div>{props.children}</div>;
+};
+
+export default Child;
+*/
 //! prop-types
 /*
 import React from "react";
@@ -181,9 +191,9 @@ export default Child;
 */
 
 //^ component lifecycle in class component
-
+//~ updating phase
+/*
 import React, { Component } from "react";
-
 class Child extends Component {
   constructor() {
     super();
@@ -194,6 +204,7 @@ class Child extends Component {
   }
   render() {
     console.log("child rendered");
+    console.log(this.state.count);
 
     return (
       <>
@@ -214,3 +225,4 @@ class Child extends Component {
 }
 
 export default Child;
+*/

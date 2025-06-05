@@ -11,6 +11,7 @@ export default App;
 */
 //! state using constructor
 /*
+import React from "react";
 class App extends React.Component {
   constructor() {
     super();
@@ -34,7 +35,6 @@ export default App;
 
 //! state without using constructor
 /*
-
 import React from "react";
 
 class App extends React.Component {
@@ -43,10 +43,11 @@ class App extends React.Component {
     id: 101,
   };
   render() {
+    let { name, id } = this.state;
     return (
       <>
-        <h1>Name : {this.state.name}</h1>
-        <h1>Id : {this.state.id}</h1>
+        <h1>Name : {name}</h1>
+        <h1>Id : {id}</h1>
       </>
     );
   }
@@ -54,7 +55,6 @@ class App extends React.Component {
 
 export default App;
 */
-
 //! updating the state
 /*
 import React from "react";
@@ -145,6 +145,7 @@ function App() {
 */
 //! by destructuring the array
 /*
+import { useState } from "react";
 function App() {
   let [userName, setUserName] = useState("Virat");
   let [uid, setUserId] = useState(18);
@@ -160,10 +161,8 @@ function App() {
     </>
   );
 }
+export default App;
 */
-
-//~export default App;
-
 //! passing array as stateValue in function component
 /*
 import React, { useState } from "react";
@@ -503,7 +502,25 @@ export default App;
 */
 
 //! sending props and children
+/*
+import React from "react";
+import Child from "./Child";
 
+const App = () => {
+  return (
+    <div>
+      <Child name={"sahil"}>
+        <h3>Fill the form</h3>
+        <form>
+          <input type="text" name="user" id="user" placeholder="enter name" />
+          <button type="submit">Submit</button>
+        </form>
+      </Child>
+    </div>
+  );
+};
+export default App;
+*/
 //^ lec 7 : how to set default props
 /*
 import React from "react";
@@ -1363,7 +1380,6 @@ export default App;
 
 //^ lec 11: lifecycle method in class component
 /*
-
 import axios from "axios";
 import React from "react";
 import { BiLogIn } from "react-icons/bi";
@@ -1401,7 +1417,7 @@ class App extends React.Component {
     //   (e) => e
     // );
 
-    ~ third way by using axios
+    //~ third way by using axios
     axios.get("https://api.escuelajs.co/api/v1/products").then(
       (val) => {
         this.setState({ data: val.data });
@@ -1451,7 +1467,6 @@ class App extends React.Component {
 
 export default App;
 */
-
 //~ rendering  phase
 /*
 import { tr } from "@faker-js/faker";
@@ -1518,6 +1533,7 @@ export default App;
 */
 
 //~ updating phase
+/*
 import React from "react";
 import Child from "./Child";
 
@@ -1556,3 +1572,45 @@ class App extends React.Component {
   }
 }
 export default App;
+*/
+
+//^ lec 12 : lifecycle methods in function components
+
+//^ SpeechRecongnition by using React
+/*
+import React from "react";
+import { CiMicrophoneOn } from "react-icons/ci";
+
+const App = () => {
+  let handleClick = (e) => {
+    console.log(e);
+    let SpeechRecogniton =
+      window.SpeechRecognition || window.webkitSpeechRecognition;
+    let recongintion = new SpeechRecogniton();
+    recongintion.addEventListener("result", (event) => {
+      console.log(event.results[0][0].transcript);
+    });
+    recongintion.start();
+  };
+  return (
+    <div>
+      <button
+        style={{
+          height: "2em",
+          width: "2em",
+          background: "black",
+          color: "white",
+          border: "1px solid white",
+          borderRadius: "50%",
+          margin: "1em",
+        }}
+        onClick={handleClick}
+      >
+        <CiMicrophoneOn />
+      </button>
+    </div>
+  );
+};
+
+export default App;
+*/
